@@ -1,0 +1,129 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protected Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: left;
+        margin: 20px;
+      }
+  
+      #content {
+        display: none;
+      }
+      
+      #Moon {
+        display: none;
+      }
+  
+      #password-input {
+        font-family: Brush Script MT, cursive;
+        margin-top: 32px;
+        font-size: 60px;
+        text-align: center;
+      }
+    </style>
+  </head>
+    <body style="background-color:#C9A8D8">
+      <div id="content"> <!-- Hidden content page -->
+        <h1>Welcome to The Odyssey of Verdan</h1>
+        <h3>Overview</h3>
+        
+        <p>
+        You have been formally invited to my next D&D campaign: <strong>The Odyssey of Verdan.</strong> This campaign is not like many of the other D&D campaigns I've run so far. This is going to be a West Marches style game. "What does this mean?", you may ask. It means you are one of many (and I really do mean <em>many</em>) potential players. Below there are three links, one to the discord (if you're not already in it), the second to Roll20, and the last to my setting lore. If you decide to play in this campaign, you will be communicating with other players in the discord to form your own groups for every quest/adventure. Once you've got a group and a quest or rumor to pursue, all that is left to do is decide a day and time during the week in which I can be your Dungeon Master.
+        </p>
+        
+        <p>
+        The campaign is very open-world style, as you must navigate the various regions of Verdan, each region becoming more and more dangerous than the last, in order to reach your destinations. Traveling in itself is a dangerous ordeal as every day might lead to an encounter. But fret not, as you will always have a bed to return to at <strong>Willow's Cove</strong>; a colony established by the free merchants of the world. <strong>Willow's Cove</strong> has many things to offer, including a large tavern, a couple places of worship for the different dieties, a moneychanger, a library, a bath-house, and more. <strong>Willow's Cove</strong> is where your characters will be staying in between adventures. Please note that due to the more asynchronous playstyle of the West Marches type of campaign, there is a very high likliehood that not everyone will always be at the same level. You will gain levels based on what and how many quests you complete and/or rumors you investigate. And yes, unfortunately I am going to be an ass and ask you to keep track of ammunition, rations, carry weight and more, but I believe it will add more to this style of play. That being said, if it proves to be needless and tiresome, we might remove it.
+        </p>
+        
+        <p>
+        So if this interests you at all, please click on the links below, and contact me , letting me know you're interested in joining (<strong>MESSAGE ME THAT YOU WANT TO PLAY OTHERWISE I AM NOT GOING TO KNOW TO GIVE YOU THE DISCORD ROLE</strong>). Side note, when you join the Roll20 game, due to the new update, you can click +Character to make a character for yourself without having to request my to give a sheet.
+        </p>
+        
+        <h4>I might add that there are a couple rules that I would like you all to follow:</h4>
+        <li>1. Don't be an ass to the other players</li>
+        <li>2. Please include at least one different player anytime you go on a new quest or adventure</li>
+        <li>3. Party limit is 4-5 players, but the limit may be surpassed in <em>unique</em> circumstances</li>
+        <li>4. Make a level 1 character, and you have 40 gold in addition to your starting equipment (alterntaively 120 gold to spend on equipment) </li>
+        <li>5. For chracter creation, set your ability scores to 0. You have 78 points to distribute among these scores. You must have at least a 7 in all scores and no more than 17 in any score prior to racial bonuses.</li>
+        <li>6. We are going to use Tasha's ruling for racial bonuses, meaning disregard any ability score improvements given by your race, and instead put a +2 in one stat and a +1 in another. If you are confused by this ruling, talk to me.</li>
+        <li>7. Create 3-5 rumors about your character that may have circulated. Not all of them have to be true... perhaps none of them are true, but whose to say?</li>
+        <li>8. Please speak to me if you plan on doing any Homebrew when creating your character</li>
+        <li>9. Prohibited races: Aaracokra, Aasimar, Changeling, Eladrin, Fairy, Genasi, Githyanki, Githzerai, Harengon, Kenku, Locathah, Owlin, Tortle, Triton,or any of that weird shit. Sorry folks.</li>
+        
+        
+        <p>Links:</p>
+        <li><a href="https://app.roll20.net/join/16541558/jKxB3A">Roll20</a></li>
+        <li><a href="https://discord.gg/9QAFN75TUN">Discord</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1BMKEJkMXQb-MF5J1U8C3EEgNFjFBaILR?usp=drive_link">Lore</a></li>
+        
+        <p>If you need to contact me and don't have a way to do so, you can add me on discord at Raidan2001</p>
+        
+        <div style="text-align:center">
+          <img src="/giphy.gif" 
+            width="200"
+            height="200">
+        </div>
+        
+        <div style='font-family:Brush Script MT, cursive;'>
+        Step once back and speak the name of the Goddess of the Moons.
+        </div>
+        
+        <p></p>
+        <button onclick="Return()">Return</button> <!-- Return button -->
+        
+      </div>
+      
+      
+      <div id="Moon"> <!-- secret page -->
+      <p>An ancient secret lies within Verdan. Old and forgotten, perhaps it is better that way. Deep in the hostile lands, <em>it</em> lies guarded by deadly wardens. It is said any who reach this sacred artifact is able to wish upon it to turn it into whatever they desire. Now only if one knew where to find this treasure...</p>
+      
+      <button onclick="Return()">Return</button> <!-- Return button -->
+      </div>    
+    
+    
+      <div id="password-input"> <!-- This is the the password protected screen -->
+        <p>I have cities but no houses, mountains but no stone, water but no fish. What am I?</p>
+        <p>What doth be the key to mine riddle?</p>
+        <label for="password"></label>
+        <input type="password" id="password" />
+        <p></p>
+        <button onclick="checkPassword()">Proceed</button>
+        <p></p>
+        <img src="/waxseal.png"
+          width="600"
+          height="350">
+      </div>
+    
+      <script> //This is the password protection script
+        function checkPassword() {
+          var enteredPassword = document.getElementById('password').value;
+          var correctPassword1 = 'map'; // Change this to your desired password
+          var correctPassword2 = 'Map'; // Change this to your desired password
+    
+          if (enteredPassword === correctPassword1 || enteredPassword === correctPassword2) {
+            alert('An educated hero I see...');
+            document.getElementById('password-input').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+          } else if (enteredPassword === 'Astreva') {
+            document.getElementById('password-input').style.display = 'none';
+            document.getElementById('Moon').style.display = 'block';
+          } else {
+            alert('Even a dwarf could answer this!');
+          }
+        }
+      </script>
+      
+      <script> // This is the Return script
+        function Return() {
+          document.getElementById('password-input').style.display = 'block';
+          document.getElementById('content').style.display = 'none';
+          document.getElementById('Moon').style.display = 'none';
+        }
+      </script>
+      
+    </body>
+</html>
